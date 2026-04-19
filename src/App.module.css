@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+  max-width: 1440px; /* Adjust based on your Figma canvas width */
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

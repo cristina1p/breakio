@@ -1,0 +1,31 @@
+/* .hero {
+} */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content p {
+  color: var(--text-muted);
+}
+
+.inputGroup {
+  display: flex;
+  gap: 16px;
+}
+
+.input {
+  color: var(--text-main);
+  border: 1px solid var(--input-border);
+  border-radius: 20px;
+  padding: 13px 24px;
+}

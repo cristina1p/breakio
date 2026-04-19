@@ -1,0 +1,25 @@
+note: 'npm create vite@latest my-landing-page -- --template react'
+        'create react project using vite'
+
+note: 'App.jsx'
+        'main component logic'
+
+note: 'App.module.css'
+        'styles for the overall page layout(main wrapper)'
+
+note: 'index.css'
+        'global styles: font-family, colors'
+        'css variables are used'
+
+note: 'Defalut Vs Named import'
+
+        : 'Default'
+          'export default function App() { ... }'
+          'import App from './App';           // No curly braces'
+
+        : 'Named'
+          'export function Navbar() { ... }'
+          'import { Navbar } from './Navbar';         // Must use { curly braces }'
+
+note: 'Component based architecture'
+        'create css file for each component'

@@ -1,0 +1,9 @@
+.primary-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 18px;
+  font-family: inherit;
+  cursor: pointer;
+}
