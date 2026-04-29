@@ -4,28 +4,22 @@ interface ArrowButtonProps {
   direction: "left" | "right";
   onClick?: () => void;
   className?: string;
+  disabled: boolean;
 }
 
 export function ArrowButton({
   direction,
   onClick,
   className,
+  disabled,
 }: ArrowButtonProps) {
-  // todo__: play with mount/un-mount
-  //       : observe no deps in the effect(empty [])
-  //       : observe how element is added/removed from DOM
-  // useEffect(() => {
-  //   console.log("mount", direction);
-
-  //   return () => console.log("un-mount", direction);
-  // }, []);
-
   // combine the base style with a condition style for both sides
-  const buttonClass = `${styles.arrowButton} ${direction === "right" ? styles.right : styles.left} ${className || ""} `;
+  const buttonClass = `${styles.arrowButton} ${direction === "right" ? styles.right : styles.left}  ${disabled ? styles.disabled : ""} ${className || ""} `;
   return (
     <button
       className={buttonClass}
       onClick={onClick}
+      disabled={disabled}
       aria-label={`${direction} scroll`}
     >
       <svg

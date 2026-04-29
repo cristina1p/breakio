@@ -72,10 +72,12 @@ export function StorySection() {
         <ArrowButton
           direction="left"
           onClick={() => scroll("left")}
+          disabled={scrollStatus.isAtStart}
           className={`${styles.leftBtn} ${scrollStatus.isAtStart ? styles.disabled : ""}`}
         />
         <ArrowButton
           direction="right"
+          disabled={scrollStatus.isAtEnd}
           onClick={() => scroll("right")}
           className={`${styles.rightBtn} ${scrollStatus.isAtEnd ? styles.disabled : ""}`}
         />

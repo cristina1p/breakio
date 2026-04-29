@@ -28,11 +28,12 @@
 .cardGroup {
   display: flex;
   gap: 24px;
-  padding: 4px 20px;
+  padding: 4px;
+  margin: -4px;
+  width: 1136px;
   overflow-x: auto;
   /* restrict swope scroll */
   /* overflow-x: hidden;  */
-  margin-left: 4px;
   scrollbar-width: none;
 }
 
@@ -42,26 +43,20 @@
 
 .sliderWrapper {
   position: relative;
-  width: 1180px;
+  display: flex;
   margin-top: 80px;
 }
 
 .leftBtn,
 .rightBtn {
   position: absolute;
-  top: 50%;
   z-index: 20;
 }
 
 .leftBtn {
-  left: -54px;
+  left: -64px;
 }
 
 .rightBtn {
-  right: -55px;
-}
-
-.disabled {
-  opacity: 0;
-  pointer-events: none;
+  right: -65px;
 }

@@ -6,20 +6,25 @@
   align-self: center;
   width: 48px;
   height: 48px;
-}
-
-.arrowButton {
-  /* ... your existing styles ... */
+  box-shadow: var(--card-shadow);
+  border-radius: 50%;
   transition:
     transform 0.1s ease,
     background-color 0.1s ease;
 }
-
-.arrowButton:active {
-  /* color: green; */
-  background-color: #3e8e41;
-}
-
 .right {
   transform: scaleX(-1);
+}
+
+.arrowButton:hover {
+  transform: scale(1.1);
+}
+
+.arrowButton.right:hover {
+  transform: scaleX(-1) scale(1.1);
+}
+
+.arrowButton.disabled {
+  box-shadow: none;
+  pointer-events: none;
 }
