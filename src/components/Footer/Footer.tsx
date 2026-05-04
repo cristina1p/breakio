@@ -24,19 +24,19 @@ export function Footer() {
           <span>@ 2023 - All rights reserved</span>
         </div>
         <div className={styles.socialLinks}>
-          <a href="#">
+          <a href="https://www.youtube.com" target="_blank">
             <YoutubeIcon />
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com" target="_blank">
             <FacebookIcon />
           </a>
-          <a href="#">
+          <a href="https://www.twitter.com" target="_blank">
             <TwitterIcon />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com" target="_blank">
             <InstagramIcon />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com" target="_blank">
             <LinkedinIcon />
           </a>
         </div>
