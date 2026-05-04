@@ -19,3 +19,21 @@
   left: 0;
   bottom: 0;
 }
+
+.testimonialWrapper {
+  position: relative;
+  display: flex;
+}
+
+.leftButton,
+.rightButton {
+  position: absolute;
+}
+
+.leftButton {
+  left: -80px;
+}
+
+.rightButton {
+  right: -80px;
+}
