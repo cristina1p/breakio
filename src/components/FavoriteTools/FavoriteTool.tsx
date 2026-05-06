@@ -105,7 +105,9 @@ export function FavoriteTools() {
             <div key={tool.id} className={styles.card}>
               {IconComponent && <IconComponent />}
               <h4 className={typo.titleCard}>{tool.title}</h4>
-              <p className={typo.textSmall}>{tool.description}</p>
+              <p className={`${typo.textSmall} ${styles.deescriptionCard}`}>
+                {tool.description}
+              </p>
             </div>
           );
         })}
