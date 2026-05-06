@@ -70,3 +70,17 @@ button {
 input:focus {
   outline: none;
 }
+
+/* todo__: recap `box-sizing` */
+
+/* .child {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; with and without this
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

@@ -22,6 +22,7 @@ export function Hero() {
         <input
           type="text"
           placeholder="Enter your name"
+          name="name"
           className={styles.input}
         />
         <Button className={typo.buttonLarge} text="Start Now" />
