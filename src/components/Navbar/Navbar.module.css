@@ -19,10 +19,6 @@
   display: none;
 }
 
-/* todo: tablet */
-/* @media (min-width: 480px) {
-} */
-
 /* desktop */
 @media (min-width: 1024px) {
   .nav {

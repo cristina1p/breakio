@@ -28,6 +28,22 @@
   font-weight: 700;
 }
 
+@media (min-width: 480px) {
+  .titleHero {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .titleSection {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .textMain {
+    max-width: 700px;
+  }
+}
+
 /* Desktop */
 @media (min-width: 1024px) {
   .logo {
@@ -62,7 +78,7 @@
 
 .titleSubSection {
   font-size: 32px;
-  font-weight: 700; /* Bold */
+  font-weight: 700;
 }
 
 .titleCard {
