@@ -1,13 +1,13 @@
 import { Button } from "../Button/Button";
 import styles from "./GetBetter.module.css";
 import typo from "../../styles/typography.module.css";
-import module from "../../styles/layout.module.css";
+import layout from "../../styles/layout.module.css";
 
 export function GetBetter() {
   return (
-    <section className={`${styles.getBetter} ${module.sectionContent}`}>
-      <div className={`${styles.textGroup} ${module.textGroup}`}>
-        <h2 className={`${module.title} ${typo.titleSection}`}>
+    <section className={`${styles.getBetter} ${layout.sectionContent}`}>
+      <div className={`${styles.textGroup} ${layout.textGroup}`}>
+        <h2 className={`${layout.title} ${typo.titleSection}`}>
           Get better everyday
         </h2>
         <p className={typo.textMain}>

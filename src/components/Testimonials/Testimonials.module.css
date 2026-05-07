@@ -1,33 +1,35 @@
 .testimonialContainer {
   position: relative;
-  width: 100%;
-  height: 766px;
   background-color: var(--bg-color-accent);
-  padding: 80px 80px;
-  margin: -80px -80px;
-  gap: 80px;
+  padding: 0 16px;
+  margin: 0 -16px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 30px;
 }
 
 .decorRight {
   position: absolute;
   right: 0;
   top: 0;
+  width: 20%;
+  z-index: 2;
 }
 
 .decorLeft {
   position: absolute;
   left: 0;
   bottom: 0;
+  width: 20%;
 }
 
 .testimonialWrapper {
-  position: relative;
+  gap: 16px;
   display: flex;
 }
 
 .leftButton,
 .rightButton {
-  position: absolute;
   background-color: var(--bg-color);
 }
 
@@ -37,4 +39,28 @@
 
 .rightButton {
   right: -80px;
+}
+
+@media (min-width: 768px) {
+  .testimonialContainer {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonialContainer {
+    padding: 0 80px;
+    margin: 0 -80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 80px;
+  }
+
+  .testimonialWrapper {
+    gap: 32px;
+  }
+
+  .decorLeft {
+    z-index: 2;
+  }
 }

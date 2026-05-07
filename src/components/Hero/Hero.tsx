@@ -1,15 +1,15 @@
 import styles from "./Hero.module.css";
 import typo from "../../styles/typography.module.css";
-import module from "../../styles/layout.module.css";
+import layout from "../../styles/layout.module.css";
 
 import { Button } from "../Button/Button";
 
 export function Hero() {
   return (
-    <section className={`${styles.content} ${module.sectionContent}`}>
-      <div className={`${styles.textGroup} ${module.textGroup}`}>
+    <section className={`${styles.content} ${layout.sectionContent}`}>
+      <div className={`${styles.textGroup} ${layout.textGroup}`}>
         <h1
-          className={`${typo.gradientText} ${typo.titleHero} ${module.title}`}
+          className={`${typo.gradientText} ${typo.titleHero} ${layout.title}`}
         >
           It's time to take a break
         </h1>

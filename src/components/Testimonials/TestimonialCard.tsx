@@ -10,7 +10,9 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
     <div className={styles.testimonialCard}>
       <div className={styles.headerCard}>
-        <h2 className={typo.titleSubSection}>{testimonial.title}</h2>
+        <h2 className={`${typo.titleSubSection} ${styles.titleSubSection}`}>
+          {testimonial.title}
+        </h2>
         <p className={`${typo.textCard} ${styles.quote}`}>
           {testimonial.quote}
         </p>

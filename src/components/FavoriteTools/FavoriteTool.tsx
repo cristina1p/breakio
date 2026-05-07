@@ -9,7 +9,7 @@ import { SavingsIcon } from "../Icons/Savings";
 import { TargetIcon } from "../Icons/Target";
 import styles from "./FavoriteTools.module.css";
 import typo from "../../styles/typography.module.css";
-import module from "../../styles/layout.module.css";
+import layout from "../../styles/layout.module.css";
 
 interface Tool {
   id: number;
@@ -87,9 +87,9 @@ const toolsData: Tool[] = [
 
 export function FavoriteTools() {
   return (
-    <section className={`${styles.favoriteTools} ${module.sectionContent}`}>
-      <div className={`${module.textGroup} ${styles.textGroup}`}>
-        <h2 className={`${module.title} ${typo.titleSection}`}>
+    <section className={`${styles.favoriteTools} ${layout.sectionContent}`}>
+      <div className={`${layout.textGroup} ${styles.textGroup}`}>
+        <h2 className={`${layout.title} ${typo.titleSection}`}>
           Your favourite tools
         </h2>
         <p className={typo.textMain}>
