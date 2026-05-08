@@ -1,4 +1,3 @@
-/* mobile */
 .content {
   justify-content: center;
   padding: 48px 0px 24px;
@@ -42,7 +41,6 @@
   height: auto;
 }
 
-/* desktop */
 @media (min-width: 1024px) {
   .content {
     padding: 56px 0px 80px;

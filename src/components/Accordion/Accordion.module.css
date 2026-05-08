@@ -1,5 +1,3 @@
-/* mobile */
-
 .itemContainer:hover button {
   color: var(--accent-color);
 }
@@ -54,8 +52,6 @@
 .description {
   text-align: center;
 }
-
-/* desktop */
 
 @media (min-width: 1024px) {
   .itemContainer span {

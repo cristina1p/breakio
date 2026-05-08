@@ -1,5 +1,3 @@
-/* mobile */
-
 .faqSection {
   padding: 48px 16px;
   margin: 0 -16px;
@@ -22,9 +20,6 @@
   width: 100%;
   gap: 24px;
 }
-
-/* desktop */
-
 @media (min-width: 1024px) {
   .faqSection {
     padding: 80px 80px;

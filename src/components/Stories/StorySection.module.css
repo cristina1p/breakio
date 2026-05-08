@@ -20,8 +20,6 @@
   padding: 4px;
   margin: -4px;
   overflow-x: auto;
-  /* restrict swope scroll */
-  /* overflow-x: hidden;  */
   scrollbar-width: none;
   width: 100%;
   scroll-snap-type: x mandatory;
@@ -38,7 +36,6 @@
   width: 100%;
 }
 
-/* tablet*/
 @media (min-width: 479px) {
   .storiesConatiner {
     padding: 0 80px;
