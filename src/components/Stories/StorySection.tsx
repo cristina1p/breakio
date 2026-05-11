@@ -60,7 +60,7 @@ export function StorySection() {
   };
 
   return (
-    <section className={`${styles.storiesConatiner} ${layout.sectionContent}`}>
+    <section className={`${styles.storiesContainer} ${layout.sectionContent}`}>
       <div className={`${styles.textGroup} ${layout.textGroup}`}>
         <h2 className={`${layout.title} ${typo.titleSection}`}>
           Stories from our users

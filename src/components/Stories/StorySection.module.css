@@ -1,4 +1,4 @@
-.storiesConatiner {
+.storiesContainer {
   padding: 0;
   position: relative;
   gap: 80px;
@@ -37,7 +37,7 @@
 }
 
 @media (min-width: 479px) {
-  .storiesConatiner {
+  .storiesContainer {
     padding: 0 80px;
   }
 
