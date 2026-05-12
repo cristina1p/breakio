@@ -18,9 +18,11 @@ export function Navbar() {
   };
   return (
     <nav className={styles.nav}>
-      <div className={`${styles.logo} ${type.logo} ${styles.rightNav}`}>
-        break<span className={styles.accent}>io</span>
-      </div>
+      <a href="#hero">
+        <div className={`${styles.logo} ${type.logo} ${styles.rightNav}`}>
+          break<span className={styles.accent}>io</span>
+        </div>
+      </a>
       {/* Pass state and toggle function */}
       <div className={styles.leftNav}>
         <HamburgerMenu isOpen={isMenuOpen} toggle={toggleMenu} />
