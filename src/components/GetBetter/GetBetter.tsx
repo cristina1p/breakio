@@ -21,7 +21,7 @@ export function GetBetter() {
       <div className={styles.imagesContainer}>
         <img
           className={styles.desktop}
-          src="src/assets/desktop.png"
+          src="../../assets/desktop.png"
           alt="Dashboard"
         />
 
