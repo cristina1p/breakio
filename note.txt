@@ -198,3 +198,146 @@ note: 'restrict horizontal scrolling(swipe)'
 /////////////////////////////////////////////////////////////////////////////////////
 
 todo: 'add css for buttons in the testimonials section'
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'use `mid-width`'
+
+note: 'current desktop style must move into a media query'
+      'your base, (outside media queries) becomes mobile'
+
+note:  
+                /* mobile */
+                
+
+                /* tablet */
+                @media (min-width:480px){}
+
+
+                /* desktop */
+                @media (min-width:1024px){}
+
+
+note: 'font-weight'
+        400 = normal
+        500 = medium
+        600 = semi-bold
+        700 = bold
+        800–900 = extra bold
+
+todo: hero section for mobile
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// 1. move section-paddings to the parent
+
+// 1. remove position absolute from buttons
+// 2. add gap 32px/16px to the parent
+// 3. add max-width instead of width to the card
+
+// 1. width 100% to the parent
+// 2. width 100% to the child, and overflow-x: scroll
+// 3. Add scroll snap to the point 2., and scroll-snap-start to the children
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note:
+
+        - add horizontal padding from sections and add to body
+        - adjust css for testimonials section (remove position absolute of buttons and add width to images and cut them)
+        - rename 'layout' instead of 'module'
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'arrowButtons to look well on mobile version' // arrows dissapear on testimonials too
+      'add snap to the scroll'
+      'make testimonials section to look nice on mobile'
+      'make the hamburger work' 
+      'delete comments like `mobile, desktop, tablet`'
+                  -------------------------------------------------------------------------------------------------------------
+
+
+
+Yes — the most widely adopted convention is `outside-in` (how the element affects layout → how it looks internally):        
+                                                                                                                                                                                 
+                                                                                                                            
+  The reasoning: properties that affect surrounding layout come first (most impactful), purely decorative properties come   
+  last.   
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'replace duplicate side classes with `data attributes`'
+    : 2 images with the same styles but position(right/left)
+    : add to img 'data-side="rigt"' or left
+    : then acces in css like:
+
+        .decor {
+                &[data-side="left"] {
+                        left:0
+                }
+                &[data-side="right"]{
+                        right:0
+                }
+        }
+
+note: 'reverse naming'
+
+headerCard => cardHeader
+
+
+
+todo: typo in one file
+      change order of of css
+      testimonials, card, hight
+      grid -> auto columns
+
+            -------------------------------------------------------------------------------------------------------------
+      image -> picture
+
+note: 'css properties typically writen in this order'
+
+  1. Positioning — position, top, right, bottom, left, z-index                                                              
+  2. Box model — display, flex/grid props, width, height, margin, padding                                                   
+  3. Typography — font-*, line-height, text-*, color                                                                        
+  4. Visual — background, border, border-radius, box-shadow, opacity                                                        
+  5. Misc — cursor, pointer-events, transition, animation            
+
+  /images/hero-desktop.webp
+  /images/hero-tablet.webp
+  /images/hero-mobile.webp
+
+
+  note: '.png is used only for transparent background'
+
+  note: 'auto-fit Vs auto-fill'
+
+  todo: anchor
+        box-shadow, background
+        padding
+
+  todo__: position-sticky + top + box-shadow 
+  
+  todo__: Hero buttons; use flex-wrap when there is limited space
+  todo__: hero image should occupy 100% of section
+
+// todo__: i18n
+// todo__: dark mode
+
+todo: sticky nav just on mobile
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+note: 'scroll-margin-top:70px'
+
+note: 'event bubbling'
+
+
+parent:          <div className={styles.leftNav}>
+middle div:      <div className={styles.links} onClick={closeMenu}>
+inner children   <a href="#stories">, <Button/>
+
+1. Target phase - click on <a>, start navigation to stories
+2. Bubbling phase - the event bubbles to the `middle div`
+3. Trigger phase - cuz `middle div` has `onClick={closeMenu}` listener, so `closeMenu` fires
+4. Result - `isOpenMenu` becomes false, and menu closes
+ 
