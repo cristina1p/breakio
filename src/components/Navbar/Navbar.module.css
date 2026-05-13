@@ -29,20 +29,25 @@
   width: 100%;
   background-color: var(--bg-color);
 }
-.links a {
-  padding: 4px 4px 4px 0;
+.links li {
   font-size: 16px;
+}
+.links a {
+  display: block;
+  padding: 6px 6px 0px 6px;
+}
+.links a:last-child {
+  padding-bottom: 6px;
 }
 
 .links a:hover {
-  padding: 4px 4px 4px;
+  padding: 8px;
   background-color: var(--bg-color-accent);
 }
 
 .open {
   display: flex;
   flex-direction: column;
-  padding: 6px 0px 6px 10px;
   border-radius: 4px;
   background-color: var(--bg-color-accent);
   box-shadow: var(--menu-shadow);
