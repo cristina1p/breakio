@@ -27,7 +27,6 @@
   left: 0;
   display: none;
   width: 100%;
-  background-color: var(--bg-color);
 }
 .links li {
   font-size: 16px;
@@ -70,7 +69,6 @@
     margin-left: 0;
     margin-right: 0;
     padding: 16px 0px 0px 0px;
-    background-color: none;
   }
 
   .links {
@@ -81,7 +79,6 @@
     align-items: center;
     margin-left: auto;
     width: auto;
-    background-color: var(--bg-color);
     box-shadow: none;
   }
 

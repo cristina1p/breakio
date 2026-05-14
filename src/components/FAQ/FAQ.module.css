@@ -25,7 +25,7 @@
   .faqSection {
     padding: 80px 80px;
     gap: 80px;
-    margin: -80px -80px;
+    margin: 0px -80px;
     scroll-margin-top: 0px;
   }
 
